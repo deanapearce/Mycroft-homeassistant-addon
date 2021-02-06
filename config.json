@@ -1,0 +1,16 @@
+{
+    "name": "Mycroft Docker Add-On",
+    "version": "git",
+    "slug": "mycroft-ha-addon",
+    "description": "Builds & runs Mycroft.ai within docker container inside HA with audio passthrough.  Rebuild to update Mycroft from latest Git source. Dockerfile based off of official Mycroft dockerfile found here: https://github.com/MycroftAI/docker-mycroft. ",
+    "arch": ["amd64","aarch64","armv7"],
+    "ports": {
+        "8181/tcp": 8181,
+        "8181/udp": 8181
+    },
+    "ports_description": {
+        "8181/tcp": "TCP binding for Mycroft port",
+        "8181/udp": "UDP binding for Mycroft port"
+    },
+    "audio": "true"
+}
